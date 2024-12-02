@@ -5,8 +5,10 @@
 
 #Then we'll just use awk to dump what we need into a file that we'll read from laterz
 
-sort 1-input.txt | awk '{ print $1 }' > /tmp/left-sorted
-sort -k 2 1-input.txt | awk '{ print $2 }' > /tmp/right-sorted
+file="1-input.txt"
+
+sort $file | awk '{ print $1 }' > /tmp/left
+sort -k 2 $file | awk '{ print $2 }' > /tmp/right
 
 TOTAL=0
 
@@ -19,7 +21,7 @@ while read -u 3 -r left \
         diff="$(( diff * -1))" #clean up the negative numbers..only positive guys here lol
     fi
     TOTAL="$((TOTAL + diff))"
-done 3</tmp/left-sorted 4</tmp/right-sorted  #remember line 13? dis how we input it.
+done 3</tmp/left 4</tmp/right  #remember line 13? dis how we input it.
 
 echo "Advent of Code 2024 Day 1a Solution...."
 echo "+-----------------------------------+"
