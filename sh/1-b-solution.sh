@@ -1,5 +1,5 @@
 #!/bin/bash
-file="1-input.txt"
+file="input/1-input.txt"
 #see solution 1a for explanation on this
 sort $file | awk '{ print $1 }' > /tmp/left
 sort -k 2 $file | awk '{ print $2 }' > /tmp/right

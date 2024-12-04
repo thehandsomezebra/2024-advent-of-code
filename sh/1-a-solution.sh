@@ -5,7 +5,7 @@
 
 #Then we'll just use awk to dump what we need into a file that we'll read from laterz
 
-file="1-input.txt"
+file="input/1-input.txt"
 
 sort $file | awk '{ print $1 }' > /tmp/left
 sort -k 2 $file | awk '{ print $2 }' > /tmp/right
