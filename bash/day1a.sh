@@ -5,7 +5,13 @@
 
 #Then we'll just use awk to dump what we need into a file that we'll read from laterz
 
-file="input/1-input.txt"
+if [[ $1 == "" ]]; then
+    file="/app/inputs/1-input.txt"
+# elif [[ $1 == "test" ]]; then
+#     DATA="../../data/day-2-example"
+else
+    file=$1  
+fi
 
 sort $file | awk '{ print $1 }' > /tmp/left
 sort -k 2 $file | awk '{ print $2 }' > /tmp/right
