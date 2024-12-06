@@ -31,5 +31,5 @@ done 3</tmp/left 4</tmp/right  #remember line 13? dis how we input it.
 
 echo "Advent of Code 2024 Day 1a Solution...."
 echo "+-----------------------------------+"
-echo "|       Total Difference: $TOTAL       |"
+echo "|       Total Difference: $TOTAL   |"
 echo "+-----------------------------------+"

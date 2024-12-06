@@ -7,11 +7,17 @@ services:
       - ./inputs:/app/inputs
     environment:
       - DAY
-  # python:
-  #   build: ./python
-  #   volumes:
-  #     - ./inputs:/app/inputs
-  # go:
-  #   build: ./go
-  #   volumes:
-  #     - ./inputs:/app/inputs
+  python:
+    build: ./python
+    command: ["python", "/app/${DAY}.py"] 
+    volumes:
+      - ./inputs:/app/inputs
+    environment:
+      - DAY
+  go:
+    build: ./go
+    command: ["go", "run", "/app/${DAY}.go"]
+    volumes:
+      - ./inputs:/app/inputs
+    environment:
+      - DAY

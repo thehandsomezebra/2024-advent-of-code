@@ -23,4 +23,4 @@ COPY . /app
 
 WORKDIR /app/bash
 
-CMD ["bash", "-c", "echo 'Have fun with Advent of Code 2024'"]
+CMD ["bash", "-c", "echo 'Have fun with Bash during Advent of Code 2024'"]

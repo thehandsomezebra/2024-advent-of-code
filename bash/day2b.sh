@@ -3,9 +3,9 @@
 #To do this I have generated every possible combination of the levels in a single report and then just part1 over that. 
 
 if [[ $1 == "" ]]; then
-    DATA="2-input.txt"
+    DATA="/app/inputs/2-input.txt"
 # elif [[ $1 == "test" ]]; then
-#     DATA="../../data/day-2-example"
+#     DATA="/app/inputs/day-2-example"
 else
     DATA=$1  
 fi
@@ -25,10 +25,13 @@ while read -u 3 -r report ; do
         printf "\n" >> /tmp/levels
         skip_indice=$((skip_indice+1))
     done
-    ./2-a-alternate.sh /tmp/levels 1> /dev/null
+    ./../day2a.sh /tmp/levels 1> /dev/null
     if [[ $? -eq 0 ]]; then
         TOTAL=$((TOTAL + 1))
     fi
 done 3< $DATA
 
- echo "Total safe reports: $TOTAL"
+echo "Advent of Code 2024 Day 2b Solution...."
+echo "+-----------------------------------+"
+echo "|     Total Safe Reports: $TOTAL       |"
+echo "+-----------------------------------+"
