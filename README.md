@@ -11,6 +11,8 @@
     - Solved B (621)
 
 
+
+day 6 4439 too low
 <!-- 
 - [day 3](https://adventofcode.com/2024/day/3)
 - [day 4](https://adventofcode.com/2024/day/4)
