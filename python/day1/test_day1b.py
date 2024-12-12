@@ -1,7 +1,7 @@
 import unittest
 from .day1b import calculate_similarity_score  
 
-class TestCalculateSimilarityScore(unittest.TestCase):
+class TestDay1b(unittest.TestCase):
     def test_sample_data(self):
         """Verifies the calculation using the sample data from the puzzle description."""
         pairs = [[3, 4], [4, 3], [2, 5], [1, 3], [3, 9], [3, 3]]

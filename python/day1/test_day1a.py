@@ -1,7 +1,7 @@
 import unittest
 from .day1a import calculate_total_distance
 
-class TestCalculateTotalDistance(unittest.TestCase):
+class TestDay1a(unittest.TestCase):
   def test_sample_data(self):
     """
     Verifies the calculation using the sample data from the puzzle description.
