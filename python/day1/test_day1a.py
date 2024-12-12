@@ -1,6 +1,5 @@
 import unittest
-from day1a import calculate_total_distance  # Importing my function from my module on day 1
-
+from .day1a import calculate_total_distance
 
 class TestCalculateTotalDistance(unittest.TestCase):
   def test_sample_data(self):

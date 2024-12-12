@@ -20,5 +20,5 @@ done
 
 echo "Advent of Code 2024 Day 1b Solution...."
 echo "+-----------------------------------+"
-echo "|       Total Difference: $TOTAL  |"
+echo "|       Similarity Score: $TOTAL  |"
 echo "+-----------------------------------+"
