@@ -9,9 +9,9 @@ services:
       - DAY
   python:
     build: ./python
-    command: ["python", "/app/${DAY}/${DAY}.py"] 
+    command: ["python", "/app/${DAY}.py"] 
     volumes:
-      - ./inputs:/app/inputs
+      - ./inputs:/inputs
     environment:
       - DAY
   go:
