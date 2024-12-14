@@ -1,12 +1,13 @@
 # day1.py
 
-from day1a import calculate_total_distance 
-from day1b import calculate_similarity_score 
-from utils import read_input 
+from utils.utils import read_integer_lists 
+from daily.day1a import calculate_total_distance 
+from daily.day1b import calculate_similarity_score 
+
 
 def main():
     """Reads the input, processes the data, and prints the results."""
-    input = read_input("inputs/1-input.txt") 
+    input = read_integer_lists("../inputs/1-input.txt") 
 
     total_distance = calculate_total_distance(input)
     print("Advent of Code 2024 Day 1a Solution....")

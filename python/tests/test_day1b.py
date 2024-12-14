@@ -1,5 +1,5 @@
 import unittest
-from .day1b import calculate_similarity_score  
+from daily.day1b import calculate_similarity_score  
 
 class TestDay1b(unittest.TestCase):
     def test_sample_data(self):

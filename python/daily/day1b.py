@@ -1,3 +1,5 @@
+# daily.day1b.py 
+
 def calculate_similarity_score(pairs):
     """Calculates the similarity score between two lists of numbers.
 

@@ -1,5 +1,5 @@
 import unittest
-from .day1a import calculate_total_distance
+from daily.day1a import calculate_total_distance
 
 class TestDay1a(unittest.TestCase):
   def test_sample_data(self):

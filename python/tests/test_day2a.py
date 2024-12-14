@@ -1,5 +1,5 @@
 import unittest
-from .day2a import validate_level_differences, validate_increasing_or_decreasing, is_report_safe
+from daily.day2a import validate_level_differences, validate_increasing_or_decreasing, is_report_safe
 
 
 # so the difference that I'm doing for day 2 vs day 1 is that I'm doing lots of assertions under one test..
