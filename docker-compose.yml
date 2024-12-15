@@ -14,10 +14,3 @@ services:
       - ./inputs:/inputs
     environment:
       - DAY
-  go:
-    build: ./go
-    command: ["go", "run", "/app/${DAY}.go"]
-    volumes:
-      - ./inputs:/inputs
-    environment:
-      - DAY

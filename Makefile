@@ -6,9 +6,6 @@ run-bash:
 run-python:
 	docker-compose run --rm -e DAY=$(DAY) python
 
-run-go:
-	docker-compose run --rm -e DAY=$(DAY) go
-
 build:
 	docker-compose up --build
 
