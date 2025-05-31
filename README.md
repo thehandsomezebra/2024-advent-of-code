@@ -32,3 +32,10 @@
 
 
 > Personal Goal: complete at least part A of ~20 days
+
+
+---
+
+### What happened?
+
+I fell out of love with this project because of all of the "move on the map" type of exercises. That's not my jam - it does not spark joy for me.
